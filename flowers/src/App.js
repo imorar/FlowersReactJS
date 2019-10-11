@@ -21,12 +21,15 @@ export default class App extends React.Component {
   }
 
   addToCart = (flowerId) => {
-    const cartList = this.state.cart.slice();
-    const flowerToAdd = this.state.flowers.find(x => x.id === flowerId);
+    const existingFlower = this.state.flowers.find(x => x.id === flowerId);
     
-    if(flowerToAdd.hasOwnProperty("count")) {
-      flowerToAdd["count"] = flowerToAdd["count"] + 1;
+    const cartList = this.state.cart.slice();
+    const itemAlreadyAdded = cartList.find(x => x.id === flowerId);
+
+    if(itemAlreadyAdded) {
+      itemAlreadyAdded["count"] = itemAlreadyAdded["count"] + 1;
     } else {
+      const flowerToAdd = Object.assign({}, existingFlower);
       flowerToAdd["count"] = 1;
       cartList.push(flowerToAdd);
     }
