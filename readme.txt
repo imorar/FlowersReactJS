@@ -14,6 +14,7 @@ v1 steps
 
 v2 steps
 Teorie: props
+
 1. create Flower component
 2. copy one flower-item
 3. extract dinamic content to props
@@ -21,6 +22,7 @@ Teorie: props
 
 v3 steps
 Teorie: state, constructor
+
 1. change App from function to class
 5. extract flowers array to state
 6. render flowers dinamicaly
@@ -33,4 +35,8 @@ v4.
 v5.
 
 - add/remove to/from cart
+
+v6. 
+
+- implement "componentDidMount" and "shouldComponentUpdate"
 

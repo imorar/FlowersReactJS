@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.flowers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flower-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid #333;
+  padding: 15px;
+  max-width: 300px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+img {
+  border: 1px solid #333;
+  outline: 3px solid #ddd;
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+}
+
+.cart-container {
+  background-color: #f0f0f0;
+  border: 1px solid #333;
+  text-align: left;
+
+}
+
+.cart-item {
+  padding: 10px 30px;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item:hover {
+  background-color: white;
+}
+
+.cart-item button {
+  margin-right: 5px;
+}
+
+.count {
+  font-weight: 700;
+}
