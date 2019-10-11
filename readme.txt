@@ -24,3 +24,13 @@ Teorie: state, constructor
 1. change App from function to class
 5. extract flowers array to state
 6. render flowers dinamicaly
+
+v4. 
+1. create cart on local state
+2. render cart elements
+3. addToCart method (sent to Flower component)
+
+v5.
+
+- add/remove to/from cart
+
